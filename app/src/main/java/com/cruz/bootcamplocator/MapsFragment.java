@@ -238,7 +238,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback, View.O
                         .beginTransaction()
                         .add(R.id.framey, new BootcampListFragment().newInstance(bootcamps), "bootCampFragment")
                         .commit();
-                for (int i2 = 0; i < bootcamps.size(); i2++) {
+                for (int i2 = 0; i2 < bootcamps.size(); i2++) {
                     addMarkers(bootcamps.get(i2));
                 }
                 return false;
